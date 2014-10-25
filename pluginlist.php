@@ -23,7 +23,7 @@ require_once("./xbox_nav.php");
             </div>
         </div><!-- content-header end-->
 		<div class="xbox-mid-container container xbox-vertical-center">
-					test
+					nono
 <!--				<p style="line-height:660px;text-align:center;font-size:20px">当前无插件</p> -->
 		</div>
 		<div class="xbox-mid-container container" style="display: none">
