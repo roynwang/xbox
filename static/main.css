@@ -1,0 +1,274 @@
+.xbox-fullwidth {
+		width:100%;
+		margin: auto;
+		padding-left:0px;
+		padding-right:0px;
+}
+
+.theme-bg-color {
+		background-color:#0060C6;
+}
+.theme-color{
+		color:#0060C6 !important;
+		text-decoration: none !important;
+}
+.grey-bg-color {
+		background-color:#f9f9f9;
+}
+.xbox-content{
+		min-height: 800px;
+}
+.xbox-content-header {
+		height:130px;
+		line-height: 130px;
+}
+
+.xbox-content-header .row{
+		margin: 0;
+}
+.xbox-content-header .col-md-4{
+		padding: 0;
+}
+.xbox-content-title {
+		font-size: 24px
+}
+.xbox-mid-container {
+		margin: 0;
+		border: none;
+		margin: auto;
+		max-width: 1000px;
+		padding:0;
+}
+.xbox-navbar-brand-left {
+		padding-left: 0;
+		padding-right: 60px;
+
+}
+.xbox-navbar-brand-right {
+		padding-right: 0;
+		padding-right: 40px;
+		font-size: 0.9em;
+		opacity: 0.8;
+}
+
+.xbox-mid-container a{
+		color:white;
+}
+.xbox-log {
+		color: white ;
+}
+
+.xbox-jumbotron-with-bg {
+
+		background:url("../img/city_bg.jpg") center center no-repeat;
+		background-color:#0060C6;
+		padding-top: 50px;
+}
+
+.features-bg{
+		background:url("../img/city_bg.jpg") center center no-repeat;
+		height: 400px;
+}
+
+.jumbotron  .container {
+		max-width: 60%;
+		margin: auto;
+		padding: 0px;
+		background-color: rgba(0, 96, 198, 0.9);
+		height: 500px;
+}
+
+.jumbotron h1{
+		text-align: center;
+		color: white;
+		font-size: 5.4em;
+		margin-top: 0;
+}
+.jumbotron p{
+		text-align: center;
+		color: #5FD7FA;
+		font-size: 1.5em;
+		margin-bottom: 5px;
+}
+
+.btn {
+		color:white;
+		font-size: 1.5em;
+		padding: 0.6em 3.2em;
+}
+
+.xbox-btn-primary {
+		background-color:#0060C6;
+		padding-left: 30px;
+		padding-right: 30px;
+		font-size: 16px;
+		color: #ffffff;
+		height: 46px;
+}
+
+.btn-enter {
+		background-color:#FF6600;
+}
+
+.short-hr {
+		margin: 15px 15px 15px 15px !important;
+}
+.tipsy-hr {
+		margin: 0 !important;
+}
+
+.footer-text a{
+		color: #000000 !important;
+		text-decoration: none
+}
+.a-muted{
+		color: #999999 !important;
+		text-decoration: none;
+}
+
+.row {
+		margin-top: 30px;
+		margin-bottom: 30px;
+}
+
+.xbox-footer {
+	background-color: #F6F5F5;
+	padding-top: 30px;
+	padding-bottom: 60px;
+	margin-top: 30px;
+}
+
+#xbox-enter {
+		margin-top: 20px;
+}
+
+.xbox-col {
+		margin-left: 20px;
+		margin-right: 20px;
+}
+.xbox-col-first {
+		margin-left: -15px;
+}
+.xbox-col-last {
+		margin-right: -15px;
+}
+
+.xbox-col h2{
+		font-size: 2em;
+}
+.xbox-tipsy a{
+		color: #000 !important;
+		padding-left: 60px !important;
+		padding-right: 60px !important;
+}
+.xbox-tipsy span{
+		margin-right: 20px;
+		margin-left: -32px;
+}
+
+.xbox-app-sicon{
+		width: 30px;
+		height: 30px;
+		margin-right: 40px;
+		border: 1px solid #e1e1e1;
+		border-radius: 5px
+}
+
+.xbox-app-android{
+		background:url("../img/app_android.png") left center no-repeat;
+		display: block;
+		height: 70px;
+}
+.xbox-app-ios{
+		background:url("../img/app_ios.png") left center no-repeat;
+		display: block;
+		height: 70px;
+		
+}
+.xbox-half-cell-top{
+		margin-top: 14px;
+		margin-bottom: 0;
+		vertical-align: bottom;
+		font-size: 14px;
+		line-height: 14px;
+}
+.xbox-half-cell-bottom{
+		margin-top: 14px;
+		vertical-align: top;
+		font-size: 14px;
+		line-height: 14px;
+}
+.xbox-table td>div{
+		margin-left:18px
+}
+
+.xbox-table >thead>tr > th > div > p{
+		line-height:18px;
+		padding-bottom:14px;
+		padding-top:50px;
+		font-size:18px;
+		margin-bottom: 0;
+}
+.xbox-table >thead>tr > th {
+		padding-left: 18px;
+}
+.xbox-status-pending {
+		display: inline-block;
+		border-radius: 5px;
+		border: 1px solid #e1e1e1;
+		background-color: #f1ff00;
+		height: 10px;
+		width: 10px;
+		margin-right: 10px;
+}
+
+.xbox-status-on {
+		display: inline-block;
+		border-radius: 5px;
+		border: 1px solid #e1e1e1;
+		background-color: #00cd23;
+		height: 10px;
+		width: 10px;
+		margin-right: 10px;
+}
+
+.xbox-status-fail {
+		display: inline-block;
+		border-radius: 5px;
+		border: 1px solid #e1e1e1;
+		background-color: #ff3000;
+		height: 10px;
+		width: 10px;
+		margin-right: 10px;
+}
+
+.xbox-status-off {
+		display: inline-block;
+		border-radius: 5px;
+		border: 1px solid #e1e1e1;
+		background-color: #b1b1b1;
+		height: 10px;
+		width: 10px;
+		margin-right: 10px;
+}
+.xbox-span-add {
+		background:url("../img/span_add.png") center center no-repeat;
+		height: 20px;
+		width: 20px;
+		display: inline-block;
+		margin-right: 14px;
+		margin-bottom: -4px;
+
+}
+table td, table th{
+		color: #000;
+}
+
+.xbox-vertical-center{
+		min-height: 100%;
+		display: flex;
+		align-items: center;
+}
+
+
+
