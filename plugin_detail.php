@@ -51,7 +51,7 @@ require_once("./content_header.php");
 			<div class="xbox-mid-container container">
 				<div class="row">
 				<div class="col-sm-6">	
-					<div class="row" style="margin:0">
+					<div class="row">
 						<div class="col-sm-3 xbox-tab-item xbox-tab-selected">
 							<p class="text-center">Android</p>
 							<hr>

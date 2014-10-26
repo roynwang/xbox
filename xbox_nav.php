@@ -1,6 +1,6 @@
 <div class="xbox-fullwidth theme-bg-color xbox-nav">
 	   <div class="xbox-mid-container vertical-center" role="navigation">
-			<div class="row" style="width:100%">
+			<div class="row" style="width:100%; margin:0;">
 			  <div class="col-md-8 xbox-logo">
 				<img src="./static/img/logo.png"/>
 				<a href="#">来打我呀中心</a>

@@ -10,6 +10,12 @@ hr {
 	border-color: #f1f1f1;
 	margin: 0;
 }
+.col-sm-1,.col-sm-2,.col-sm-3,.col-sm-4,.col-sm-5,.col-sm-6,.col-sm-7,.col-sm-8,.col-sm-9,.col-sm-10,.col-sm-11,.col-sm-12 {
+	padding:0;
+}
+.row {
+	margin: 0;
+}
 .xbox-fullwidth {
 	width:100%;
 	margin: auto;
@@ -39,7 +45,7 @@ hr {
 .theme-bg-color {
 	background-color:#0060C6;
 }
-.theme-color{
+.theme-color, .selected{
 	color:#0060C6 !important;
 	text-decoration: none !important;
 }
@@ -116,6 +122,7 @@ hr {
 .xbox-logo {
 	color: #ffffff ;
 	font-size: 30px;
+	padding: 0;
 }
 .xbox-logo > img{
 	margin-top: -4px;
@@ -455,7 +462,118 @@ table td, table th{
 	height: 16px;
 }
 
+.xbox-review-detail{
+	padding:0;
+}
+/*15 + 16 + 15*/
+.xbox-review-detail .row{
+	margin: 0px;
+}
+.xbox-review-detail h4{
+	font-size: 20px;
+	line-height: 20px;
+	margin-top: 50px;
+	margin-bottom: 15px;
+}
 
+.xbox-review-detail label{
+	width: 220px;
+	padding:0;
+	margin: 15px 0;
+	font-size: 16px;
+	font-weight: normal;
+	line-height: 16px;
+}
+.xbox-review-detail-text{
+	padding: 6px 0 0 0;
+}
+
+.xbox-review-detail p{
+	margin: auto;
+	padding:10px 0 10px 20px;
+	font-size: 14px;
+	line-height: 14px;
+}
+.xbox-review-detail p a{
+	text-decoration: underline !important;
+	line-height: 14px;
+}
+
+.xbox-review-detail p em{
+	font-size: 20px;
+	font-weight: normal;
+	font-style: normal;
+}
+
+.xbox-review-detail p em[class="review-pass"]{
+	color: #00ce23;
+}
+/*TODO
+ * should add other result
+ */
+
+.xbox-review-result {
+	padding-top: 10px !important;
+}
+
+.xbox-review-timeline {
+	padding: 50px 0 0 0;
+	min-height: 600px;
+	width: 230px;
+}
+
+/*time line icon*/
+.timeline-icon {
+	display: block;
+	height: 30px;
+}
+.timeline-vr {
+	width:1px;
+	border-left:1px solid #000;
+	min-height:600px;
+	margin: 50px 0 0 0;
+	border-color: #dddddd;
+	padding:0;
+}
+.timeline-item {
+	line-height: 30px;
+	font-size: 16px;
+	margin: 0;
+}
+.timeline-item > p{
+	padding: 0 0 0 10px;
+}
+
+.timeline-line {
+	display:block;
+	height: 56px;
+	margin-left: 14px;
+	background:url("../img/rev_line.png") left center no-repeat;
+}
+.timeline-blue {
+	background:url("../img/rev_blue.png") left center no-repeat;
+}
+.timeline-blue-active {
+	background:url("../img/rev_blue_active.png") left center no-repeat;
+}
+.timeline-green {
+	background:url("../img/rev_green.png") left center no-repeat;
+}
+.timeline-green-active {
+	background:url("../img/rev_green_active.png") left center no-repeat;
+}
+.timeline-grey {
+	background:url("../img/rev_grey.png") left center no-repeat;
+}
+.timeline-grey-active {
+	background:url("../img/rev_grey_active.png") left center no-repeat;
+}
+.timeline-red {
+	background:url("../img/rev_red.png") left center no-repeat;
+}
+.timeline-red-active {
+	background:url("../img/rev_red_active.png") left center no-repeat;
+}
 
 
 @media  (min-width: 768px) {
