@@ -1,15 +1,16 @@
-<div class="xbox-fullwidth theme-bg-color">
-            <div class="xbox-mid-container navbar" role="navigation">
-              <div class="xbox-log">
-                <a class="navbar-brand xbox-navbar-brand-left" href="#">来打我呀中心</a>
-              </div>
-              <div class="pull-right">
-                 <a class="navbar-brand xbox-navbar-brand-right" href="#">帮助</a>	
-                 <a class="navbar-brand xbox-navbar-brand-right" title="hello!!!!!!" href="#">登陆</a>
-                 <a id="xbox-login" class="navbar-brand xbox-navbar-brand-right" title="hello!!!!!!" href="#">大湿头像</a>
-              </div> 
-            </div> <!--navbar-->
-        </div><!--xbox-nav-container-->
+<div class="xbox-fullwidth theme-bg-color xbox-nav">
+	   <div class="xbox-mid-container vertical-center" role="navigation">
+			<div class="row" style="width:100%">
+			  <div class="col-md-8 xbox-logo">
+				<img src="./static/img/logo.png"/>
+				<a href="#">来打我呀中心</a>
+			  </div>
+				 <a id="xbox-login" class="pull-right" title="hello!!!!!!" href="#">大湿头像</a>
+				 <span class="xbox-nav-span pull-right"><a href="#">帮助</a></span>
+				 <span class="xbox-nav-span pull-right"><a title="hello!!!!!!" href="#">登陆</a></span>
+			</div> <!--navbar-->
+		</div><!--xbox-nav-container-->
+</div>
 <!--右上角用户/登陆对话框-->
 	<div class="container" id="profile-tipsy" style="display:none">
 		<ul class="xbox-tipsy nav nav-pills nav-stacked">

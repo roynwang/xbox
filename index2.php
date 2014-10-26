@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-	<link rel='stylesheet' href="./static/bootstrap.css">
-	<link rel='stylesheet' href="./static/main.css">
-	<link rel='stylesheet' href="./static/tipsy.css">
+	<link rel='stylesheet' href="./static/css/bootstrap.css">
+	<link rel='stylesheet' href="./static/css/main.css">
+	<link rel='stylesheet' href="./static/css/tipsy.css">
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />  
   </head>
   <body>
@@ -12,64 +12,79 @@
 		?>
 		<div class="jumbotron xbox-jumbotron-with-bg">
 			 <div class="container">
+				<div class="row">
 				<p>目前已上线1.208个插件</p>
-				<h1>6亿用户在等你</h1>
-				<div class="features-bg"></div>
+				</div>
+				<div class="row">
+				<h2>6亿用户在等你</h2>
+				</div>
 			</div>
 		</div>
-		<div class="xbox-mid-container container" id="xbox-enter">
-			<p class="text-center">
-				<a href="#" class="btn btn-enter">进入中心</a>
-			</p>
-			<p class="text-center text-muted">
+		<div class="xbox-mid-container container" >
+			<div class="row">
+				 <p class="text-center">
+					<a href="#" class="btn xbox-btn xbox-btn-orange" id="xbox-enter">进入中心</a>
+				</p>
+			</div>
+				<p class="text-center" id="xbox-enter-text">
 		还不赶快行动,创建属于自己的插件吧,让6亿用户享受福利
-			</p>
+				</p>
 		</div>
 		<div class="xbox-mid-container container">
-			<div class="row">
-				<div class="col-md-2 xbox-col xbox-col-first pull-left text-center">
-					<p text-center text-muted>#ICON</p>
-					<h2>HAHA</h2>
-					<hr class="short-hr">
-					<p class="text-center text-muted">there is some description</p>
-				</div>
-				<div class="col-md-2 xbox-col text-center">
-					<p>#ICON</p>
-					<h2>HAHA</h2>
-					<hr class="short-hr">
-					<p class="text-muted">there is some description</p>
-				</div>
-				<div class="col-md-2 xbox-col text-center">
-					<p>#ICON</p>
-					<h2>HAHA</h2>
-					<hr class="short-hr">
-					<p class="text-muted">there is some description</p>
-				</div>
+<div class="row">
+<div class="col-sm-12 xbox-steps">
+    <div class="row">
+      <div class="col-sm-7 five-three">
+        <div class="row">
+          <div class="col-sm-4 text-center">
+			<img src ="./static/img/step_init.png"/>
+			<h2>ddd</h2>
+			<hr class="short-hr">
+			<p>ddd</p>
+          </div>
+          <div class="col-sm-4 text-center">
+			<img src ="./static/img/step_design.png"/>
+			<h2>ddd</h2>
+			<hr class="short-hr">
+			<p>ddd</p>
+          </div>
+          <div class="col-sm-4 text-center">
+			<img src ="./static/img/step_apk.png"/>
+			<h2>ddd</h2>
+			<hr class="short-hr">
+			<p>ddd</p>
+          </div><!-- end inner row -->
+        </div>
+      </div>
+      <div class="col-sm-5 five-two text-center">
+        <div class="row">
+          <div class="col-sm-6">
 
-				<div class="col-md-2 xbox-col text-center">
-					<p>#ICON</p>
-					<h2>HAHA</h2>
-					<hr class="short-hr">
-					<p class="text-muted">there is some description</p>
-				</div>
-				<div class="col-md-2 pull-right xbox-col-last xbox-col text-center">
-					<p>#ICON</p>
-					<h2>HAHA</h2>
-					<hr class="short-hr">
-					<p class="text-muted">there is some description</p>
-				</div>
-			</div><!--row-->
-			<div class="row">
-				<a class="pull-right a-muted" href="#">了解更多</a>
-			</div>
+			<img src ="./static/img/step_test.png"/>
+			<h2>ddd</h2>
+			<hr class="short-hr">
+			<p>ddd</p>
+          </div>
+          <div class="col-sm-6 text-center">
+			<img src ="./static/img/step_pass.png"/>
+			<h2>ddd</h2>
+			<hr class="short-hr">
+			<p>ddd</p>
+          </div>
+        </div><!-- end inner row -->
+      </div>
+    </div>​<!-- end outer row -->
+ </div>
+</div>
+				<a class="xbox-steps-more pull-right a-muted" href="#">了解更多</a>
 		</div><!--container-->
 		<?php
 			require_once("./xbox_footer.php");
 		?>
   </body>
-<script type='text/javascript' src='./static/jquery.js'></script> 
+<script type='text/javascript' src='./static/js/jquery.js'></script> 
 <!-- <script type='text/javascript' src='./static/bootstrap.min.js'></script> -->
-<script type='text/javascript' src='./static/jquery.tipsy.js'></script> 
+<script type='text/javascript' src='./static/js/jquery.tipsy.js'></script> 
 <script type='text/javascript'>
 $(function(){
 		login_tipsy = $('#xbox-login').tipsy({gravity:'ne', opacity: 1, trigger: 'manual', html:true});
