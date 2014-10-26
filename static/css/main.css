@@ -205,9 +205,10 @@ hr {
 
 .short-hr {
 	width: 70px;
+	margin: 20px auto;
 }
 .tipsy-hr {
-	margin: 0 !important;
+	align: center;
 }
 
 .footer-text a{
