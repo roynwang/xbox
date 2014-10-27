@@ -1,4 +1,6 @@
-
+body {
+	font-family: "Microsoft YaHei";
+}
 a {
 	text-decoration:none !important;
 }
@@ -13,6 +15,68 @@ hr {
 .col-sm-1,.col-sm-2,.col-sm-3,.col-sm-4,.col-sm-5,.col-sm-6,.col-sm-7,.col-sm-8,.col-sm-9,.col-sm-10,.col-sm-11,.col-sm-12 {
 	padding:0;
 }
+label{
+	width: 220px;
+	padding:0;
+	margin: 15px 0;
+	font-size: 16px;
+	font-weight: normal;
+	line-height: 16px;
+	text-align: right;
+	color: #000;
+	margin-right: 20px;
+}
+
+/*define indent and border */
+textarea, input{
+		border: 1px solid #dddddd;
+		text-indent: 14px !important;
+}
+
+input[type="text"] {
+		line-height: 14px;
+		padding: 12px 0 12px 0;
+		width: 400px;
+		font-size: 14px;
+}
+
+input[class*="date-item"] {
+		width: 300px;
+}
+
+textarea {
+		padding: 14px 0;
+		height: 200px;
+		width: 400px;
+}
+
+.xbox-form .row{
+		margin : 15px auto;
+}
+.xbox-form .row:nth-of-type(1){
+		margin-top: 50px;
+}
+
+textarea:focus, 
+input[type="text"]:focus, 
+input[type="password"]:focus,
+input[type="datetime"]:focus,
+input[type="datetime-local"]:focus, 
+input[type="date"]:focus,
+input[type="month"]:focus,
+input[type="time"]:focus,
+input[type="week"]:focus,
+input[type="number"]:focus,
+input[type="email"]:focus, 
+input[type="url"]:focus,
+input[type="search"]:focus,
+input[type="tel"]:focus,
+input[type="color"]:focus, 
+.uneditable-input:focus {   
+		box-shadow: none !important;
+		outline: #94c2ff solid 2px !important;
+}
+
 .row {
 	margin: 0;
 }
@@ -41,7 +105,6 @@ hr {
 	font-size:18px;
 }
 
-
 .theme-bg-color {
 	background-color:#0060C6;
 }
@@ -49,6 +112,7 @@ hr {
 	color:#0060C6 !important;
 	text-decoration: none !important;
 }
+
 .grey-bg-color {
 	background-color:#f9f9f9;
 }
@@ -62,6 +126,11 @@ hr {
 .xbox-content-header {
 	height:130px;
 	line-height: 130px;
+}
+
+.xbox-content-header-narrow {
+	height:100px;
+	line-height: 100px;
 }
 
 .xbox-tab{
@@ -156,12 +225,14 @@ hr {
 	color: white;
 	font-size: 110px;
 	line-height: 110px;
+	font-family: "Helvetica Neue", Arial,'Hiragino Sans GB', 'Microsoft YaHei', sans-serif;
 }
 .jumbotron p{
 	text-align: center;
 	color: #5fd7fa;
 	font-size: 30px;
 	margin-top:90px;
+	font-family: "Helvetica Neue", Arial,'Hiragino Sans GB', 'Microsoft YaHei', sans-serif;
 }
 
 .xbox-steps h2{
@@ -476,21 +547,13 @@ table td, table th{
 	margin-bottom: 15px;
 }
 
-.xbox-review-detail label{
-	width: 220px;
-	padding:0;
-	margin: 15px 0;
-	font-size: 16px;
-	font-weight: normal;
-	line-height: 16px;
-}
 .xbox-review-detail-text{
 	padding: 6px 0 0 0;
 }
 
 .xbox-review-detail p{
 	margin: auto;
-	padding:10px 0 10px 20px;
+	padding:10px 0;
 	font-size: 14px;
 	line-height: 14px;
 }
@@ -526,6 +589,7 @@ table td, table th{
 .timeline-icon {
 	display: block;
 	height: 30px;
+	width: 30px;
 }
 .timeline-vr {
 	width:1px;
@@ -541,7 +605,8 @@ table td, table th{
 	margin: 0;
 }
 .timeline-item > p{
-	padding: 0 0 0 10px;
+		padding: 0;
+		margin-left: 10px;
 }
 
 .timeline-line {
@@ -573,6 +638,55 @@ table td, table th{
 }
 .timeline-red-active {
 	background:url("../img/rev_red_active.png") left center no-repeat;
+}
+
+.xbox-version-step {
+		margin-top: 50px;
+}
+.xbox-version-step div hr {
+		margin-top: 22px;
+		border-width: 2px;
+		border-color: #0060c6;
+		visibility: hidden;
+}
+.xbox-version-step .col-sm-1{
+		width: 100px;
+}
+.xbox-version-step .col-sm-2{
+		width: 200px;
+		font-size: 18px;
+		color: #b1b1b1
+}
+.xbox-version-step .col-sm-2>span{
+		display: inline-block;
+		width: 30px;
+		height: 30px;
+		border-radius: 15px;
+		background-color: #b1b1b1;
+		color: #fff;
+		line-height: 30px;
+		text-align: center;
+		margin-right: 12px;
+		margin-left: 12px;
+}
+.xbox-version-step .selected span{
+		background-color: #0060c6;
+}
+.xbox-version-step .selected hr{
+		visibility: visible;
+}
+
+.xbox-form label{
+		width: 100px;
+}
+
+.xbox-icon-datepicker{
+		display:block;
+		background:url("../img/icon_datepicker.png") left center no-repeat;
+		width: 25px;
+		height: 27px;
+		margin-top: 8px;
+		margin-left: -40px;
 }
 
 
