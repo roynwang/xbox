@@ -1,8 +1,10 @@
 body {
-	font-family: "Microsoft YaHei";
+	font-family: "Helvetica Neue", Arial,'Microsoft YaHei','Hiragino Sans GB', sans-serif;
+	
 }
 a {
 	text-decoration:none !important;
+	color: #0060c6;
 }
 p {
 	margin-bottom: 0;
@@ -51,10 +53,7 @@ textarea {
 }
 
 .xbox-form .row{
-		margin : 15px auto;
-}
-.xbox-form .row:nth-of-type(1){
-		margin-top: 50px;
+		margin : 30px auto;
 }
 
 textarea:focus, 
@@ -499,10 +498,6 @@ table td, table th{
 	font-size: 14px;
 	color: #333333;
 }
-
-.xbox-a{
-	color: #0060c6;
-}
 .xbox-app-action a:nth-of-type(1){
 	margin-right: 30px;
 }
@@ -649,6 +644,9 @@ table td, table th{
 		border-color: #0060c6;
 		visibility: hidden;
 }
+.xbox-version-step>hr{
+	margin-bottom: 50px;
+}
 .xbox-version-step .col-sm-1{
 		width: 100px;
 }
@@ -688,6 +686,13 @@ table td, table th{
 		margin-top: 8px;
 		margin-left: -40px;
 }
+.xbox-icon-uploadfile{
+		display:block;
+		background:url("../img/icon_uploadfile.png") left center no-repeat;
+		width: 120px;
+		height: 120px;
+}
+
 
 
 @media  (min-width: 768px) {

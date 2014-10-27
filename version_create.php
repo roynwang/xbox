@@ -5,6 +5,7 @@
 	<link rel='stylesheet' href="./static/css/main.css">
 	<link rel='stylesheet' href="./static/css/tipsy.css">
 	<link rel='stylesheet' href="./static/css/datepicker.css">
+	<link rel='stylesheet' href="./static/css/xboxupload.css">
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />  
   </head>
   <body>
@@ -13,13 +14,13 @@ require_once("./xbox_nav.php");
 ?>
 <div class="xbox-content">
 <?php
-	require_once("./content_header_narrow.php");
+require_once("./content_header_narrow.php");
 ?>
 <?php
-	require_once("./version_create_process_bar.php");
+require_once("./version_create_process_bar.php");
 ?>
 <?php
-	require_once("./version_test_form.php");
+require_once("./version_test_form.php");
 ?>
 </div>
 <?php
@@ -27,9 +28,11 @@ require_once("./xbox_footer.php");
 ?>
   </body>
 <script type='text/javascript' src='./static/js/jquery.js'></script> 
-<script type='text/javascript' src='./static/css/bootstrap.js'></script>
+<script type='text/javascript' src='./static/js/bootstrap.min.js'></script>
 <script type='text/javascript' src='./static/js/jquery.tipsy.js'></script> 
 <script type='text/javascript' src='./static/js/datepicker.js'></script> 
+<script type='text/javascript' src='./static/js/jquery.ocupload.js'></script> 
+<script type='text/javascript' src='./static/js/jquery.xboxupload.js'></script> 
 <script type='text/javascript'>
 $(function(){
 	login_tipsy = $('#xbox-login').tipsy({gravity:'ne', opacity: 1, trigger: 'manual', html:true});
@@ -52,22 +55,8 @@ $(function(){
 			login_tipsy.tipsy('hide');
 		}
 	});
-	$("#fold-btn").click(function(e){
-		if($("#xbox-fold").is(':hidden')){
-			$("#xbox-fold").slideDown();
-			$("#fold-btn").removeClass("info-expand");
-			$("#fold-btn").addClass("info-fold");
-		}
-		else{
-			$("#xbox-fold").slideUp();
-			$("#fold-btn").removeClass("info-fold");
-			$("#fold-btn").addClass("info-expand");
-		}
-	});
-	$(".xbox-tab-item").click(function(e){
-			$(".xbox-tab-selected").removeClass("xbox-tab-selected");
-			$(this).addClass("xbox-tab-selected");
-	});
+	//绑定所有上传事件
+	bindXboxUpload();
 });
 </script>
 </html>

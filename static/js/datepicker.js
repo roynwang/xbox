@@ -153,11 +153,17 @@
         place: function () {
             var offset = this.$trigger.offset(),
                 height = this.$trigger.outerHeight();
-
-            this.$picker.css({
+            /* original code */
+            /*this.$picker.css({
                 top: offset.top + height,
                 left: offset.left
             });
+			*/
+			// by renyuan
+			this.$picker.css({
+				top: offset.top - 10,
+				left: offset.left + 50
+			});
         },
 
         show: function () {
@@ -653,7 +659,7 @@
     };
 
     Datepicker.defaults = {
-        autoClose: false,
+        autoClose: true,
         dateFormat: "mm/dd/yyyy",
         days: ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"],
         daysShort: ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"],

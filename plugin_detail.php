@@ -36,9 +36,9 @@ require_once("./content_header.php");
 		</div>
 		<div class="container xbox-app-text xbox-app-doc">
 			<h4>介绍文档</h4>
-			<p><a class="xbox-a">喵咪</a>
-			<a class="xbox-a">喵咪</a>
-            <a class="xbox-a">喵咪咪</a></p>
+			<p><a class="xbox-bcs-file">喵咪</a>
+			<a class="xbox-bcs-file">喵咪</a>
+            <a class="xbox-bcs-file">喵咪咪</a></p>
 		</div>
 		</div>
 		<hr class="hr-fold">

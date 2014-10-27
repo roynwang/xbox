@@ -15,7 +15,8 @@
     line-height: 30px;
 }
 
-
+/* uncomment to enable arraow
+/*
 .datepicker-arrow,
 .datepicker-arrow:after {
     display: block;
@@ -23,6 +24,7 @@
     height: 0;
     border: 5px solid transparent;
 }
+	*/
 
 .datepicker-arrow {
     position: relative;

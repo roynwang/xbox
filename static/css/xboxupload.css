@@ -1,0 +1,24 @@
+.xbox-upload-result {
+	margin-top: 14px;
+}
+
+.xbox-upload-result >.row{
+	margin:5px auto;
+}
+.xbox-upload-result >.row:nth-of-type(1){
+	margin-top: 20px;
+}
+.xbox-bcs-file {
+	text-decoration: underline !important;
+	color: #333333 !important;
+	line-height: 16px;
+	padding: 6px 0;
+}
+.xbox-file-del{
+	background:url("../img/file_del.png") left center no-repeat;
+	display: block;
+	width: 16px;
+	height: 16px;
+	margin-bottom: -4px;
+	margin-left: 4px;
+}
