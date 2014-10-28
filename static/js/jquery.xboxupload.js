@@ -2,9 +2,6 @@
 function bindUploadItem(ele,callback_complete){
 	var pdiv = $(ele);
 	//var name = pdiv.attr("data-upload-name");
-	//fix ocupload bug. add padding and margin to parent
-	//var btn = $(pdiv.find('[data-upload]')[0]);
-	//btn.parent().css({padding: btn.css("padding"), margin: btn.css("margin")});
 
 	var ulobj = pdiv.find('[data-upload]').upload({
 			name: "xboxfile",
@@ -18,6 +15,10 @@ function bindUploadItem(ele,callback_complete){
 //			onComplete: callback_complete,
 			onSelect: function() {}
 	});
+
+	//fix ocupload bug. add padding and margin to parent
+	var btn = $(pdiv.find('[data-upload]')[0]);
+	btn.parent().css({margin: btn.css("margin")});
 	return ulobj;
 }	
 function getFileName(url){

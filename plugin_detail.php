@@ -23,10 +23,8 @@ require_once("./content_header.php");
 						<h4>来打我呀</h4>
 						<p>ID:1234567</p>
 				</div>
-				<div class="col-sm-4 pull-right" >
-					<div class="pull-right">
+				<div class="col-sm-4 pull-right text-right" >
 						<p class="xbox-app-action"><a class="xbox-a">查看初审详情</a> <a class="xbox-a">编辑</a></p>
-					</div>
 				</div>
 			</div>
 		  <div id="xbox-fold" style="display: none">
@@ -34,7 +32,7 @@ require_once("./content_header.php");
 			<h4>插件简介</h4>
 			<p>喵咪喵咪喵咪咪</p>
 		</div>
-		<div class="container xbox-app-text xbox-app-doc">
+		<div class="container xbox-app-text xbox-app-doc xbox-doc-links">
 			<h4>介绍文档</h4>
 			<p><a class="xbox-bcs-file">喵咪</a>
 			<a class="xbox-bcs-file">喵咪</a>

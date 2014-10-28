@@ -41,7 +41,7 @@
 						<a>ddddd</a>
 					</div>
 				</div>
-				<div class="col-sm-3 text-center xbox-steps">
+				<div class="col-sm-3 text-center xbox-steps xbox-doc-links">
 					<img src="./static/img/help_contact.png">
 					<h4>联系我们</h4>
 					<hr class="short-hr">

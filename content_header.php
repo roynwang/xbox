@@ -7,7 +7,7 @@
 				</div>
 				<div class="col-sm-6">
 				<div class="pull-right">	
-				 <a class="xbox-btn xbox-btn-primary">
+				 <a href="#" class="xbox-btn xbox-btn-primary">
 						<span class="xbox-span-add"></span>新建插件</a>
 				</div>
 				</div>

@@ -5,8 +5,11 @@ body {
 a {
 	text-decoration:none !important;
 	color: #0060c6;
+	cursor: pointer;
 }
-
+.xbox-doc-links a{
+	text-decoration: underline !important;
+}
 
 p {
 	margin-bottom: 0;
@@ -30,6 +33,7 @@ label{
 	color: #000;
 	margin-right: 20px;
 }
+
 
 /*define indent and border */
 textarea, input{
@@ -57,6 +61,7 @@ textarea {
 .xbox-form .row{
 		margin : 30px auto;
 }
+
 
 textarea:focus, 
 input[type="text"]:focus, 
@@ -97,6 +102,8 @@ input[type="color"]:focus,
 
 .vertical-center{
 	display: flex;
+	display: -webkit-flex; /* Safari */
+	-webkit-align-items: center; /* Safari 7.0+ */
 	align-items: center;
 }
 
@@ -241,9 +248,6 @@ input[type="color"]:focus,
 	color: #000;
 	margin: 20px 0 0 0;
 }
-.xbox-steps a{
-	text-decoration:underline !important;
-}
 
 .xbox-steps p {
 	font-size: 14px;
@@ -265,7 +269,10 @@ input[type="color"]:focus,
 }
 
 
-.xbox-btn {
+.xbox-btn,
+.xbox-btn:hover
+{
+	cursor: pointer ;
 	color:white;
 	font-size: 16px;
 	padding: 15px 30px;
@@ -276,14 +283,41 @@ input[type="color"]:focus,
 	color: #ffffff;
 }
 
+#xbox-enter {
+	display: block;
+	width: 316px;
+	font-size: 28px;
+	line-height: 50px;
+	height: 82px;
+	margin-top: 70px;
+}
+
 .xbox-btn-primary {
 	background-color:#0060C6;
+}
+
+.xbox-btn-primary:active {
+	background-color: rgba(0, 96, 198, 0.8);
 }
 .xbox-btn-light {
 	background-color:#84bfff;
 }
+
+.xbox-btn-light:active {
+	background-color: rgba(#84bfff, 0.8);
+}
 .xbox-btn-na {
 	background-color:#d8d8d8;
+}
+
+.xbox-btn-na:active {
+	background-color: rgba(#d8d8d8, 0.8);
+}
+.xbox-btn-orange {
+	background-color:#ff6600;
+}
+.xbox-btn-orange {
+	background-color: rgba(#ff6600, 0.8);
 }
 .xbox-form-btn{
 		width: 460px;
@@ -295,10 +329,7 @@ input[type="color"]:focus,
 		width: 130px;
 }
 
-.xbox-btn-orange {
-	background-color:#FF6600;
-	font-size: 28px;
-}
+
 
 .short-hr {
 	width: 70px;
@@ -326,10 +357,6 @@ input[type="color"]:focus,
 	line-height: 22px;
 }
 
-#xbox-enter {
-	margin-top: 60px;
-	width: 316px;
-}
 
 #xbox-enter-text{
 	margin-top: 28px;
@@ -483,19 +510,23 @@ table td, table th{
 .xbox-app-info > p{
 	font-size: 14px;
 	color: #333333;
+	/*
 	margin-left : -30px;
 	margin-bottom: -10px;
+	*/
 
 }
 .xbox-app-info > h4{
 	font-size: 20px;
 	color: #000;
 	margin-bottom: 0;
-	margin-left : -30px;
+/*	margin-left : -30px; */
 }
 .xbox-app-info {
+	position:relative;
 	font-size: 16px;
 	color: #0060c6;
+	left: -25px;
 }
 .xbox-app-desc{
 	margin-bottom: 42px;
@@ -518,6 +549,12 @@ table td, table th{
 	font-size: 14px;
 	color: #333333;
 }
+/*
+.xbox-app-action {
+	position: relative;
+	top: 15px;
+}
+	*/
 .xbox-app-action a:nth-of-type(1){
 	margin-right: 30px;
 }
@@ -715,7 +752,7 @@ table td, table th{
 }
 .xbox-upload-desc-bottom {
 		color: #999;
-		margin: -10px 0 0 0;
+		margin: -25px 0 0 0;
 		line-height: 14px;
 		font-size: 14px ;
 }
