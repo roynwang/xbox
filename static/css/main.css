@@ -6,6 +6,8 @@ a {
 	text-decoration:none !important;
 	color: #0060c6;
 }
+
+
 p {
 	margin-bottom: 0;
 }
@@ -234,14 +236,19 @@ input[type="color"]:focus,
 	font-family: "Helvetica Neue", Arial,'Hiragino Sans GB', 'Microsoft YaHei', sans-serif;
 }
 
-.xbox-steps h2{
+.xbox-steps h2,  .xbox-steps h4{
 	font-size: 18px;
-	font-color: #000;
+	color: #000;
+	margin: 20px 0 0 0;
 }
+.xbox-steps a{
+	text-decoration:underline !important;
+}
+
 .xbox-steps p {
 	font-size: 14px;
 	color: #666666;
-	line-height: 0;
+	line-height: 14px;
 }
 .xbox-steps {
 	padding: 0;
@@ -716,6 +723,15 @@ table td, table th{
 .xbox-form-btn > .row > .col-md-4{
 		width: 130px
 }
+
+.xbox-help-title {
+	margin: 50px 0;
+	text-align: center;
+	color: #000;
+	font-size: 20px;
+	font-weight: normal;
+}
+
 
 
 @media  (min-width: 768px) {

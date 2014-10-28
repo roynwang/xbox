@@ -38,19 +38,19 @@
         <div class="row">
           <div class="col-sm-4 text-center">
 			<img src ="./static/img/step_init.png"/>
-			<h2>ddd</h2>
+			<h4>ddd</h4>
 			<hr class="short-hr">
 			<p>ddd</p>
           </div>
           <div class="col-sm-4 text-center">
 			<img src ="./static/img/step_design.png"/>
-			<h2>ddd</h2>
+			<h4>ddd</h4>
 			<hr class="short-hr">
 			<p>ddd</p>
           </div>
           <div class="col-sm-4 text-center">
 			<img src ="./static/img/step_apk.png"/>
-			<h2>ddd</h2>
+			<h4>ddd</h4>
 			<hr class="short-hr">
 			<p>ddd</p>
           </div><!-- end inner row -->
@@ -61,19 +61,19 @@
           <div class="col-sm-6">
 
 			<img src ="./static/img/step_test.png"/>
-			<h2>ddd</h2>
+			<h4>ddd</h4>
 			<hr class="short-hr">
 			<p>ddd</p>
           </div>
           <div class="col-sm-6 text-center">
 			<img src ="./static/img/step_pass.png"/>
-			<h2>ddd</h2>
+			<h4>ddd</h4>
 			<hr class="short-hr">
 			<p>ddd</p>
           </div>
         </div><!-- end inner row -->
       </div>
-    </div>​<!-- end outer row -->
+    </div><!-- end outer row -->
  </div>
 </div>
 				<a class="xbox-steps-more pull-right a-muted" href="#">了解更多</a>
