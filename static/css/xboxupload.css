@@ -1,5 +1,5 @@
 .xbox-upload-result {
-	margin-top: 14px;
+		margin:0;
 }
 
 .xbox-upload-result >.row{
@@ -8,13 +8,15 @@
 .xbox-upload-result >.row:nth-of-type(1){
 	margin-top: 20px;
 }
-.xbox-bcs-file {
+.xbox-bcs-file,
+.xbox-bcs-file>*{
 	text-decoration: underline !important;
 	color: #333333 !important;
-	line-height: 16px;
+	line-height: 14px;
 	padding: 6px 0;
 }
-.xbox-file-del{
+
+.xbox-upload-del{
 	background:url("../img/file_del.png") left center no-repeat;
 	display: block;
 	width: 16px;
@@ -22,3 +24,36 @@
 	margin-bottom: -4px;
 	margin-left: 4px;
 }
+.xbox-pic-form .xbox-upload-del{
+		margin: 8px auto auto -40px;
+}
+
+.xbox-pic-form > .row .row{
+		margin-top: 0;
+}
+
+.xbox-span-uploadicon{
+		display:block;
+		background:url("../img/pic_add.png") center center no-repeat;
+		background-color: #e5f2ff;
+		border: 1px dashed #94c2ff;
+		margin-right: 15px;
+		margin-bottom: 15px;
+}
+
+.xbox-span-uploadicon[data-upload='bicon']{
+		width: 120px;
+		height: 120px;
+}
+
+.xbox-span-uploadicon[data-upload='sicon']{
+		width: 75px;
+		height: 75px;
+}
+.xbox-span-uploadicon[data-upload='pic']{
+		width: 124px;
+		height: 206px;
+}
+
+
+

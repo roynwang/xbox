@@ -22,6 +22,19 @@ require_once("./version_create_process_bar.php");
 <?php
 require_once("./version_test_form.php");
 ?>
+<div class="xbox-mid-container">
+		<div class="xbox-form-btn row">
+		<div class="col-sm-4">
+		<a id="all-cancel" class="xbox-btn xbox-btn-light">取消</a>
+		</div>
+		<div class="col-sm-4" style="padding:0 12px">
+	<a id="all-save" class="center-block xbox-btn xbox-btn-na">保存</a>
+		</div>
+		<div class="col-sm-4">
+	<a id="all-submit" class="xbox-btn xbox-btn-primary pull-right">提交</a>
+		</div>
+		</div>
+</div>
 </div>
 <?php
 require_once("./xbox_footer.php");
@@ -35,7 +48,17 @@ require_once("./xbox_footer.php");
 <script type='text/javascript' src='./static/js/jquery.xboxupload.js'></script> 
 <script type='text/javascript'>
 $(function(){
+
+	//绑定所有上传事件
+	bindXboxUpload();
+
+	$("#all-submit").click(function (){
+			xboxGetFormValue();
+	});
+	
+	//tipsy
 	login_tipsy = $('#xbox-login').tipsy({gravity:'ne', opacity: 1, trigger: 'manual', html:true});
+
 
 	$('#xbox-login').click(function(e){
 		e.preventDefault();
@@ -55,8 +78,7 @@ $(function(){
 			login_tipsy.tipsy('hide');
 		}
 	});
-	//绑定所有上传事件
-	bindXboxUpload();
+
 });
 </script>
 </html>

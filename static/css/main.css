@@ -264,15 +264,28 @@ input[type="color"]:focus,
 	padding: 15px 30px;
 	text-align: center;
 	border-radius: 0;
+	height: 46px;
+	line-height: 46px;
+	color: #ffffff;
 }
 
 .xbox-btn-primary {
 	background-color:#0060C6;
-	padding: 15px, 30px, 15px,30px;
-	font-size: 16px;
-	color: #ffffff;
-	height: 46px;
-	line-height: 46px;
+}
+.xbox-btn-light {
+	background-color:#84bfff;
+}
+.xbox-btn-na {
+	background-color:#d8d8d8;
+}
+.xbox-form-btn{
+		width: 460px;
+		margin: auto;
+}
+.xbox-form-btn  .xbox-btn{
+		display: table-cell; 
+		padding: 0;
+		width: 130px;
 }
 
 .xbox-btn-orange {
@@ -686,13 +699,23 @@ table td, table th{
 		margin-top: 8px;
 		margin-left: -40px;
 }
-.xbox-icon-uploadfile{
-		display:block;
-		background:url("../img/icon_uploadfile.png") left center no-repeat;
-		width: 120px;
-		height: 120px;
+.xbox-upload-desc-right {
+		margin-left: -60px;
+		line-height: 47px;
+		height: 47px;
+		color: #999;
+		font-size: 14px ;
+}
+.xbox-upload-desc-bottom {
+		color: #999;
+		margin: -10px 0 0 0;
+		line-height: 14px;
+		font-size: 14px ;
 }
 
+.xbox-form-btn > .row > .col-md-4{
+		width: 130px
+}
 
 
 @media  (min-width: 768px) {
