@@ -30,10 +30,19 @@ function filecomplete(pdiv, bcsurl, ocupload){
 	//add the target url
 	var ubtn = $(pdiv.find("[data-upload]")[0]);
 	var newfile = $('<div class="xbox-bcs-file"><a>' + fn + '</a><div class="xbox-upload-del" style="display:inline-block"></div>');
-	newfile.insertBefore(pdiv.find(".xbox-upload-result"));
+	//insert a empty dev
+	var ph = pdiv.find("#_placeholder");
+	if( ph.length == 0){
+		ph = $('<div id="_placeholder" style="height:16px"></div>');
+		ph.insertBefore(pdiv.find(".xbox-upload-result"));
+	}
+	newfile.insertAfter(ph);
 
 	$(".xbox-upload-result").append($('<input type="text" style="display:none" value="' + bcsurl+ '"></div>'));
 	alert("我在假装上传:"+ fn);
+	//redraw to apply the css
+	//pdiv.hide();
+	//pdiv.show();
 
 	var del = newfile.find(".xbox-upload-del");
 	del.click(function(e){
