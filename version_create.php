@@ -7,6 +7,7 @@
 	<link rel='stylesheet' href="./static/css/datepicker.css">
 	<link rel='stylesheet' href="./static/css/xboxupload.css">
 	<link rel='stylesheet' href="./static/css/xboxmodal.css">
+	<link rel='stylesheet' href="./static/css/xboxstatusmsg.css">
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />  
   </head>
   <body>
@@ -24,7 +25,7 @@ require_once("./version_create_process_bar.php");
 require_once("./version_test_form.php");
 ?>
 <div class="xbox-mid-container">
-		<div class="xbox-form-btn row">
+		<div class="xbox-bottom-btns row">
 		<div class="col-sm-4">
 		<a id="all-cancel" class="xbox-btn xbox-btn-light">取消</a>
 		</div>
@@ -49,6 +50,7 @@ require_once("./xbox_footer.php");
 <script type='text/javascript' src='./static/js/jquery.ocupload.js'></script> 
 <script type='text/javascript' src='./static/js/jquery.xboxupload.js'></script> 
 <script type='text/javascript' src='./static/js/jquery.xboxmodal.js'></script> 
+<script type='text/javascript' src='./static/js/jquery.xboxstatusmsg.js'></script> 
 <script type='text/javascript'>
 $(function(){
 	//绑定所有上传事件
@@ -57,6 +59,10 @@ $(function(){
 	$("#all-submit").click(function (){
 //			xboxGetFormValue();
 		show_xboxmodal({type:"confirm",info_type:"pass"});	
+	});
+
+	$("#all-save").click(function (){
+		showmsg($(this),{result: "pass"});
 	});
 	
 	//tipsy

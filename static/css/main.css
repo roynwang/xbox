@@ -318,17 +318,15 @@ input[type="color"]:focus,
 .xbox-btn-orange {
 	background-color: rgba(#ff6600, 0.8);
 }
-.xbox-form-btn{
+.xbox-bottom-btns{
 		width: 460px;
-		margin: 90px auto auto auto;
+		margin: 90px auto 90px auto;
 }
-.xbox-form-btn  .xbox-btn{
+.xbox-bottom-btns  .xbox-btn{
 		display: table-cell; 
 		padding: 0;
 		width: 130px;
 }
-
-
 
 .short-hr {
 	width: 70px;
@@ -756,9 +754,6 @@ table td, table th{
 		font-size: 14px ;
 }
 
-.xbox-form-btn > .row > .col-md-4{
-		width: 130px
-}
 
 .xbox-help-title {
 	margin: 50px 0;
