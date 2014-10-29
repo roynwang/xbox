@@ -11,6 +11,11 @@ function bindUploadItem(ele,callback_complete){
 			autoSubmit: true,
 			onSubmit: function() {
 				callback_complete(pdiv,"http://Iamtest.com/test.file",this);
+
+				//hide add action if reach the max count
+				if(pdiv.find(".xbox-upload-result input").length  == pdiv.attr("data-upload-max")){
+					pdiv.find("#_autosubmit").hide();
+				}
 			},
 //			onComplete: callback_complete,
 			onSelect: function() {}
@@ -19,6 +24,7 @@ function bindUploadItem(ele,callback_complete){
 	//fix ocupload bug. add padding and margin to parent
 	var btn = $(pdiv.find('[data-upload]')[0]);
 	btn.parent().css({margin: btn.css("margin")});
+	btn.parent().attr("id","_autosubmit");
 	return ulobj;
 }	
 function getFileName(url){
@@ -50,7 +56,7 @@ function filecomplete(pdiv, bcsurl, ocupload){
 			$(pdiv.find(".xbox-upload-result input")[i]).remove();
 			$(this).parent().remove();
 			if(pdiv.find(".xbox-upload-result input").length  < pdiv.attr("data-upload-max")){
-				ubtn.removeAttr("disable");
+				pdiv.find("#_autosubmit").show();
 			}
 	});
 
@@ -84,14 +90,10 @@ function singleiconcomplete(pdiv,bcsurl,ocupload){
 			$(this).remove();
 
 			if(pdiv.find(".xbox-upload-result input").length  < pdiv.attr("data-upload-max")){
-				pic.show();
+				pdiv.find("#_autosubmit").show();
 			}
 	});
 	
-	//hide add action if reach the max count
-	if(pdiv.find(".xbox-upload-result input").length  == pdiv.attr("data-upload-max")){
-		pic.hide();
-	}
 	
 }
 function bindXboxUpload(){
