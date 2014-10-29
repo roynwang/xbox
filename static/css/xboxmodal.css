@@ -1,0 +1,94 @@
+.modal-dialog{
+		position: absolute;
+		left: 50%;
+		margin-left: -220px;
+		width: 400px;
+		height: 404px;
+		top: 50%;
+		margin-top: -250px;
+} 
+.modal-content {
+		border-radius: 0px;
+}
+.modal-body {
+		padding: 0;
+		height: 262px;
+}
+.modal-footer {
+		height: 82px;
+		border-top-color: #ddd;
+		text-align: center;
+}
+.modal-header {
+		border: none;
+		padding: 30px 0 30px 30px;
+		text-align: left;
+		margin-top: 0;
+}
+.modal-header > h4 {
+		font-size: 20px;
+		line-height: 20px;
+		margin: 0;
+}
+
+.modal-content .xbox-review-detail label {
+		margin: 10px 14px 10px;
+		width: 120px;
+		font-size: 17px;
+}
+
+.modal-content .xbox-review-detail-text {
+		padding: 2px 0 0 0;
+		width: 214px;
+}
+.modal-content .xbox-review-detail-result em{
+		font-size: 14px;
+}
+
+.xbox-modal-info {
+		max-width: 300px;
+		margin: auto;
+}
+
+span.xbox-modal-span-warn{
+		display:block;
+		background: url('../img/msg_warn.png') center center no-repeat;
+		height: 40px;
+		width: 40px;
+}
+span.xbox-modal-span-fail{
+		display:block;
+		background: url('../img/msg_fail.png') center center no-repeat;
+		height: 40px;
+		width: 40px;
+}
+span.xbox-modal-span-pass{
+		display:block;
+		background: url('../img/msg_pass.png') center center no-repeat;
+		height: 40px;
+		width: 40px;
+}
+/* this is for jquery generated modal*/
+
+#_xbox-modal .modal-header{
+		padding: 18px 0 18px 18px;
+}
+
+#_xbox-modal .modal-footer{
+		height : 56px;
+}
+#_xbox-modal .modal-body{
+		height : 128px;
+}
+#_xbox-modal-msg {
+		font-size: 18px;
+		color: #000;
+		max-width: 246px;
+		min-width: 100px;
+}
+#_xbox-modal-icon {
+		margin-right: 14px;
+}
+#_xbox-modal .xbox-btn{
+		padding: 15px 49px;
+}

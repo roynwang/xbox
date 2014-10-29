@@ -2,9 +2,8 @@
 <html lang="en">
   <head>
 	<link rel='stylesheet' href="./static/css/bootstrap.css">
-	<link rel='stylesheet' href="./static/css/tipsy.css">
 	<link rel='stylesheet' href="./static/css/main.css">
-	<link rel='stylesheet' href="./static/css/xboxmodal.css">
+	<link rel='stylesheet' href="./static/css/tipsy.css">
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />  
   </head>
   <body>
@@ -118,7 +117,7 @@ require_once("./content_header.php");
 			</div>
 	  </td>
 	  <td><div>
-			<p class="xbox-app-action"><a class="xbox-a" href="#auth_detail" data-toggle="modal">审核流程</a> <a class="xbox-a">版本信息</a></p>
+			<p class="xbox-app-action"><a class="xbox-a">审核流程</a> <a class="xbox-a">版本信息</a></p>
        </div></td>
 	</tr>
   </tbody>
@@ -129,39 +128,8 @@ require_once("./content_header.php");
 require_once("./xbox_footer.php");
 ?>
   </body>
-<!--  审核详情modal  -->
-<div id="auth_detail" class="modal fade" style="display:none">
-	<div class="modal-dialog">
-		<div class="modal-content">
-			<div class="modal-header">
-				<h4>审核详情</h4>
-			</div>
-			<div class="modal-body">
-				<div class="xbox-review-detail">
-					<div class="row">
-						<label class="col-sm-3 text-right">插件名称：</label>
-						<div class="col-sm-8 text-left xbox-review-detail-text">
-							<p >啊哈哈哈哈哈哈哈哈哈哈哈哈哈哈啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊</p>
-						</div>
-					</div>
-					<div class="row">
-						<label class="col-sm-3 text-right">审核结果：</label>
-						<div class="col-sm-8 text-left xbox-review-detail-text">
-							<p class="xbox-review-detail-result"><em class="review-pass">通过</em></p>
-						</div>
-					</div>
-			</div>
-		</div>
-			<div class="modal-footer">
-				<a class="xbox-btn xbox-btn-primary text-center" data-dismiss="modal">确定</a>
-			</div>
-	</div>
-</div>
-<!-- 审核详情modal end-->
-
-
 <script type='text/javascript' src='./static/js/jquery.js'></script> 
-<script type='text/javascript' src='./static/js/bootstrap.min.js'></script>
+<!-- <script type='text/javascript' src='./static/bootstrap.min.js'></script> -->
 <script type='text/javascript' src='./static/js/jquery.tipsy.js'></script> 
 <script type='text/javascript'>
 $(function(){

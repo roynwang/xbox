@@ -2,8 +2,9 @@
 <html lang="en">
   <head>
 	<link rel='stylesheet' href="./static/css/bootstrap.css">
-	<link rel='stylesheet' href="./static/css/main.css">
 	<link rel='stylesheet' href="./static/css/tipsy.css">
+	<link rel='stylesheet' href="./static/css/main.css">
+	<link rel='stylesheet' href="./static/css/xboxmodal.css">
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />  
   </head>
   <body>

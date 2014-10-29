@@ -6,6 +6,7 @@
 	<link rel='stylesheet' href="./static/css/tipsy.css">
 	<link rel='stylesheet' href="./static/css/datepicker.css">
 	<link rel='stylesheet' href="./static/css/xboxupload.css">
+	<link rel='stylesheet' href="./static/css/xboxmodal.css">
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />  
   </head>
   <body>
@@ -40,20 +41,22 @@ require_once("./version_test_form.php");
 require_once("./xbox_footer.php");
 ?>
   </body>
+
 <script type='text/javascript' src='./static/js/jquery.js'></script> 
-<script type='text/javascript' src='./static/js/bootstrap.min.js'></script>
+<script type='text/javascript' src='./static/js/bootstrap.js'></script>
 <script type='text/javascript' src='./static/js/jquery.tipsy.js'></script> 
 <script type='text/javascript' src='./static/js/datepicker.js'></script> 
 <script type='text/javascript' src='./static/js/jquery.ocupload.js'></script> 
 <script type='text/javascript' src='./static/js/jquery.xboxupload.js'></script> 
+<script type='text/javascript' src='./static/js/jquery.xboxmodal.js'></script> 
 <script type='text/javascript'>
 $(function(){
-
 	//绑定所有上传事件
 	bindXboxUpload();
 
 	$("#all-submit").click(function (){
-			xboxGetFormValue();
+//			xboxGetFormValue();
+		show_xboxmodal({type:"confirm",info_type:"pass"});	
 	});
 	
 	//tipsy

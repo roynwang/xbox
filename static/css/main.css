@@ -34,7 +34,6 @@ label{
 	margin-right: 20px;
 }
 
-
 /*define indent and border */
 textarea, input{
 		border: 1px solid #dddddd;
@@ -321,7 +320,7 @@ input[type="color"]:focus,
 }
 .xbox-form-btn{
 		width: 460px;
-		margin: auto;
+		margin: 90px auto auto auto;
 }
 .xbox-form-btn  .xbox-btn{
 		display: table-cell; 
