@@ -39,6 +39,9 @@ textarea, input{
 		border: 1px solid #dddddd;
 		text-indent: 14px !important;
 }
+textarea{
+	margin-top: 10px;
+}
 
 input[type="text"] {
 		line-height: 14px;
@@ -596,39 +599,59 @@ table td, table th{
 	margin-bottom: 15px;
 }
 
-.xbox-review-detail-text{
-	padding: 6px 0 0 0;
+.xbox-review-detail-text p{
+	padding: 12px 0 15px 0 !important;
 }
 
 .xbox-review-detail p{
 	margin: auto;
-	padding:10px 0;
+	padding: 15px 0;
 	font-size: 14px;
-	line-height: 14px;
+	line-height: 18px;
 }
-.xbox-review-detail p a{
+.xbox-review-detail-doc{
+	padding-top: 12px;
+}
+
+.xbox-review-detail-pics{
+	padding-top: 12px;
+	padding-bottom: 15px;
+}
+
+.xbox-review-detail-pics img{
+		width: 75px;
+		height: 75px;
+}
+.xbox-review-detail-btns{
+	padding-top: 30px;
+}
+.xbox-review-detail-doc p{
+		padding: 1px;
+}
+.xbox-review-detail-doc p a{
 	text-decoration: underline !important;
 	line-height: 14px;
 }
 
 .xbox-review-detail p em{
+	position: relative;
 	font-size: 20px;
 	font-weight: normal;
 	font-style: normal;
+	top: -2px;
 }
 
 .xbox-review-detail p em[class="review-pass"]{
 	color: #00ce23;
 }
-/*TODO
- * should add other result
- */
+
 
 .xbox-review-result {
 	padding-top: 10px !important;
 }
 
 .xbox-review-timeline {
+	width:640px;
 	padding: 50px 0 0 0;
 	min-height: 600px;
 	width: 230px;
@@ -762,6 +785,40 @@ table td, table th{
 	font-size: 20px;
 	font-weight: normal;
 }
+/* radio start*/
+.radio{
+		display:-moz-box;
+		display:-webkit-box;
+		display:box;
+		float:left;
+		margin: 5px 0 5px;
+		
+}
+/*让原有的复选框图案隐藏*/
+.radios input[type="radio"]{
+		display: none;
+}
+/*图片和文字都放在label里面*/
+.radios label{
+		width: 130px;
+		display:-moz-box;
+		display:-webkit-box;
+		display:box;
+		float:left;
+		font-size: 14px;
+		color: #333;
+		line-height: 26px;/*不设行高文字垂直不居中*/ 
+		text-indent: 34px;/*使文字缩进：文字和图片都在label里面，不缩进文字和图片叠加在一起*/
+		background:url("../img/radio_unchecked.png") left top no-repeat;/*背景图片*/
+		background-size: 26px 26px;/*设置背景图片大小*/
+}
+.radios input[type="radio"]:checked + .radio{  
+		background:url("../img/radio_checked.png") left top no-repeat;/*被选中时，换背景图片*/
+		background-size: 26px 26px;
+}
+
+/* radio end*/
+
 
 
 

@@ -1,0 +1,100 @@
+/*time line icon*/
+.timeline-icon {
+	display: block;
+	height: 30px;
+	width: 30px;
+	margin: auto;
+}
+.timeline-icon {
+		
+}
+.timeline-vr {
+	width:1px;
+	border-left:1px solid #000;
+	min-height:600px;
+	margin: 50px 0 0 0;
+	border-color: #dddddd;
+	padding:0;
+}
+.timeline-item {
+	line-height: 30px;
+	font-size: 16px;
+	margin: 0;
+}
+
+.timeline-item > p{
+		padding: 0;
+		margin-left: 10px;
+}
+
+.timeline-line {
+	display:block;
+	height: 56px;
+	width: 2px;
+	margin: auto;
+	background:url("../img/rev_line.png") center center repeat-y;
+}
+.timeline-blue {
+	background:url("../img/rev_blue.png") left center no-repeat;
+}
+.timeline-blue-active {
+	background:url("../img/rev_blue_active.png") left center no-repeat;
+}
+.timeline-green {
+	background:url("../img/rev_green.png") left center no-repeat;
+}
+.timeline-green-active {
+	background:url("../img/rev_green_active.png") left center no-repeat;
+}
+.timeline-grey {
+	background:url("../img/rev_grey.png") left center no-repeat;
+}
+.timeline-grey-active {
+	background:url("../img/rev_grey_active.png") left center no-repeat;
+}
+.timeline-red {
+	background:url("../img/rev_red.png") left center no-repeat;
+}
+.timeline-red-active {
+	background:url("../img/rev_red_active.png") left center no-repeat;
+}
+
+.timeline-with-date {
+		margin-top: 34px;
+}
+
+.timeline-with-date > div >div:nth-of-type(1) p{
+		margin-right: 31px;
+		text-align:right;
+}
+
+.timeline-with-date > div >div:nth-of-type(2) p{
+		margin-left: 31px;
+		text-align:left;
+}
+.timeline-with-date .timeline-icon {
+		position: relative;
+		top: 16px;
+}
+
+.timeline-with-date .timeline-line {
+		position: relative;
+		top: 16px;
+		height: 70px;
+
+}
+.timeline-date p:nth-of-type(1){
+		font-size: 30px;
+		color: #b1b1b1;
+}
+
+.timeline-date p:nth-of-type(2){
+		font-size: 16px;
+		color: #b1b1b1;
+}
+
+.timeline-text >p{
+		font-size: 16px;
+		color: #000;
+		line-height: 66px;
+}

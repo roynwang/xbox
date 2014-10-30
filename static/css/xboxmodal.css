@@ -84,7 +84,8 @@ span.xbox-modal-span-pass{
 		font-size: 18px;
 		color: #000;
 		max-width: 246px;
-		min-width: 100px;
+		min-width: 126px;
+		margin-top: -5px;
 }
 #_xbox-modal-icon {
 		margin-right: 14px;

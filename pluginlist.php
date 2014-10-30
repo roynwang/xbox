@@ -12,16 +12,16 @@
 require_once("./xbox_nav.php");
 ?>
 <div class="xbox-content">
-		<?php
-			require_once("./content_header.php");
-		?>
+<?php
+require_once("./content_header.php");
+?>
 		<div class="xbox-mid-container xbox-content-body-none vertical-center">
 				<div class="container">
 					<p class="xbox-empty-text text-center">当前无插件</p>
 				</div>
 		</div>
 		<div class="xbox-mid-container container" style="margin-top:12px" >
-		
+
 <table class="table table-hover xbox-table">
   <thead>
 	<tr>
@@ -89,26 +89,26 @@ require_once("./xbox_footer.php");
 <script type='text/javascript' src='./static/js/jquery.tipsy.js'></script> 
 <script type='text/javascript'>
 $(function(){
-	login_tipsy = $('#xbox-login').tipsy({gravity:'ne', opacity: 1, trigger: 'manual', html:true});
+		login_tipsy = $('#xbox-login').tipsy({gravity:'ne', opacity: 1, trigger: 'manual', html:true});
 
-	$('#xbox-login').click(function(e){
-		e.preventDefault();
-		e.stopPropagation();
-		if($(".tipsy").length == 0){
-			$("#xbox-login").attr("title",$("#profile-tipsy").html());
-			login_tipsy.tipsy('show');
-			//为tipsy绑定方法,单击tipsy保持显示
-			$(".tipsy").click(function(e){
+		$('#xbox-login').click(function(e){
+				e.preventDefault();
 				e.stopPropagation();
-			});
-		}
-	});
-	//屏幕任意区域点击则tipsy消失
-	$('html').click(function(e){
-		if($(".tipsy").length != 0){
-			login_tipsy.tipsy('hide');
-		}
-	});
+				if($(".tipsy").length == 0){
+						$("#xbox-login").attr("title",$("#profile-tipsy").html());
+						login_tipsy.tipsy('show');
+						//为tipsy绑定方法,单击tipsy保持显示
+						$(".tipsy").click(function(e){
+								e.stopPropagation();
+						});
+				}
+		});
+		//屏幕任意区域点击则tipsy消失
+		$('html').click(function(e){
+				if($(".tipsy").length != 0){
+						login_tipsy.tipsy('hide');
+				}
+		});
 });
 </script>
 </html>

@@ -41,7 +41,7 @@ require_once("./xbox_nav.php");
 				</div>
 				<div class="row">
 					<label class = "col-sm-3 text-right">相关文档  :</label>
-					<div class="col-sm-8 text-left xbox-review-detail-text">
+					<div class="col-sm-8 text-left xbox-review-detail-doc">
 						<p><a>test.doc</a></p>
 						<p><a>test.doc</a></p>
 						<p><a>test.doc</a></p>
@@ -69,7 +69,7 @@ require_once("./xbox_nav.php");
 				</div>
 				<div class="row">
 					<label class = "col-sm-3 text-right">相关文档  :</label>
-					<div class="col-sm-8 text-left xbox-review-detail-text">
+					<div class="col-sm-8 text-left xbox-review-detail-doc">
 						<p><a>test.doc</a></p>
 						<p><a>test.doc</a></p>
 						<p><a>test.doc</a></p>

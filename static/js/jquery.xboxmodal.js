@@ -28,9 +28,7 @@ function show_xboxmodal(option){
 			<div class="modal-body vertical-center">\
 				<div class="xbox-modal-info row">\
 					<span id="_xbox-modal-icon" class="col-sm-4" style="position: relative; top:-6px"></span>\
-					<div id="_xbox-modal-msg"class="col-sm-7">\
-					<p></p>\
-					</div>\
+					<p id="_xbox-modal-msg"></p>\
 				</div>\
 			</div>\
 			<div class="modal-footer">\
@@ -61,7 +59,7 @@ function show_xboxmodal(option){
 function build_xboxmodal_info(modal_obj, option){
 		var header = ".modal-header h4";
 		var icon = "#_xbox-modal-icon";
-		var msg = "#_xbox-modal-msg p";
+		var msg = "#_xbox-modal-msg";
 		var footer = ".modal-footer";
 		var btns = ".modal-footer > div";
 		modal_obj.find(header).html(option['title']);
@@ -76,7 +74,7 @@ function build_xboxmodal_info(modal_obj, option){
 function build_xboxmodal_confirm(modal_obj, option){
 		var header = ".modal-header h4";
 		var icon = "#_xbox-modal-icon";
-		var msg = "#_xbox-modal-msg p";
+		var msg = "#_xbox-modal-msg";
 		var footer = ".modal-footer";
 		var btns = ".modal-footer > div";
 		

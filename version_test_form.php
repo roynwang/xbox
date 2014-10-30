@@ -1,5 +1,6 @@
 <div class="xbox-mid-container xbox-form">
  	<div class="center-block" style="width: 600px;">
+		<h4 class="text-center">填写信息</h4>
 		<form class="xbox-input-form" role="form">
    		 	<div class="row">
            		<label class="col-sm-2">dddd</label>
@@ -16,7 +17,7 @@
         	</div>
 		</form>
 
-		<div class="xbox-file-form" data-upload-max="1" data-upload-name="xboxfile">
+		<div class="xbox-file-form" data-upload-max="3" data-upload-name="xboxfile">
 			<div class="row">
 				<label class="col-sm-2">dddddd</label>
 				<div class="col-sm-4">

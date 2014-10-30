@@ -64,6 +64,10 @@ $(function(){
 	$("#all-save").click(function (){
 		$(this).showmsg({result: "pass"});
 	});
+
+	$("#all-cancel").click(function (){
+		show_xboxmodal({type:"remind",info_type:"fail",msg:"啊啊哈哈哈哈哈哈哈哈哈哈哈哈哈哈"});	
+	});
 	
 	//tipsy
 	login_tipsy = $('#xbox-login').tipsy({gravity:'ne', opacity: 1, trigger: 'manual', html:true});
