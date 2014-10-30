@@ -1,13 +1,13 @@
 #_xbox-status-msg{
-	position: fixed;
-	top: 30px;
+	position: absolute;
 	font-size: 16px;
 	color: #000;
 	width: 100%;
 	height: 30px;
+	top: -8px;
 	text-align: center;
-	padding-bottom: 7px;
 	vertical-align: middle;
+	display: none;
 }
 #_xbox-status-msg > a{
 	font-size: 14px;

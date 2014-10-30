@@ -62,7 +62,7 @@ $(function(){
 	});
 
 	$("#all-save").click(function (){
-		showmsg($(this),{result: "pass"});
+		$(this).showmsg({result: "pass"});
 	});
 	
 	//tipsy
@@ -87,7 +87,6 @@ $(function(){
 			login_tipsy.tipsy('hide');
 		}
 	});
-
 });
 </script>
 </html>
